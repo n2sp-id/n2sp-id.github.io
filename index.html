@@ -1,11 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <title>N2SP — Komunitas Fotografi Bandung</title>
+
   <meta name="description" content="N2SP adalah ruang observasi visual. Fotografi diperlakukan sebagai arsip untuk membaca ruang, waktu, dan aktivitas manusia.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://n2sp-id.github.io/" />
+  <link rel="canonical" href="https://n2sp-id.github.io/">
+
+  <!-- Schema Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://n2sp-id.github.io/#organization",
+    "name": "N2SP",
+    "url": "https://n2sp-id.github.io/",
+    "logo": "https://n2sp-id.github.io/assets/logo-n2sp.png",
+    "description": "N2SP adalah ruang observasi visual. Fotografi diperlakukan sebagai arsip untuk membaca ruang, waktu, dan aktivitas manusia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bandung",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -37,6 +57,16 @@
     .hero {
       margin-top: 110px;
       padding: 0 20px;
+    }
+
+    .logo-n2sp {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 1.5px solid #B08A5A; /* lish */
+      padding: 16px;
+      background: #121212;
+      margin-bottom: 28px;
     }
 
     h1 {
@@ -88,11 +118,13 @@
 <nav>
   <a href="index.html">Home</a>
   <a href="tentang.html">Tentang N2SP</a>
-  <a href="aktifitas.html">Aktifitas</a>
+  <a href="aktifitas.html">Aktivitas</a>
   <a href="node-visual.html">Node Visual</a>
 </nav>
 
 <div class="hero">
+  <img src="logo-n2sp.png" alt="Logo N2SP" class="logo-n2sp">
+
   <h1>N2SP</h1>
   <p class="tagline">Komunitas Fotografi Bandung</p>
 
@@ -103,7 +135,7 @@
   </ul>
 
   <a href="tentang.html" class="btn">Tentang N2SP</a>
-  <a href="aktifitas.html" class="btn">Aktifitas</a>
+  <a href="aktifitas.html" class="btn">Aktivitas</a>
 </div>
 
 </body>
