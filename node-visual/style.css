@@ -49,6 +49,30 @@ p {
   color: #D0C7BC;
 }
 
+    .meta {
+      font-size: 13px;
+      color: #8B7E74;
+      margin-bottom: 18px;
+    }
+
+    .embed-ig {
+      max-width: 420px;
+      margin: 0 auto 20px auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .embed-ig iframe {
+      width: 100%;
+      height: 460px;
+      border: none;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #555;
+    }
+
 /* ==============================
    Navigation
    ============================== */
