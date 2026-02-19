@@ -28,6 +28,9 @@ h1 {
   font-size: 56px;
   margin-bottom: 12px;
   letter-spacing: -0.04em;
+  background: linear-gradient(90deg, #B08A5A, #00E0FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -36,8 +39,9 @@ h2 {
   margin-bottom: 18px;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #E6E3DE;
+  color: #B08A5A;
 }
+
 
 p {
   margin-bottom: 20px;
@@ -132,10 +136,56 @@ nav a:hover {
   color: #121212;
 }
 
-footer {
-  margin-top: 100px;
-  padding: 40px 0;
-  font-size: 13px;
-  color: #777;
-  border-top: 1px solid #2A2A2A;
+/* =========================
+   BACKGROUND SYSTEM
+========================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      rgba(0,255,255,0.12) 0px,
+      rgba(0,255,255,0.12) 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0,255,255,0.08) 0deg,
+      rgba(0,255,255,0.08) 1deg,
+      transparent 1deg,
+      transparent 30deg
+    );
+
+  animation: rotateSystem 60s linear infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.15;
+  filter: blur(2px);
+}
+
+@keyframes rotateSystem {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
