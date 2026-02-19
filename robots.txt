@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+https://https://n2sp-id.github.io/sitemap.xml
