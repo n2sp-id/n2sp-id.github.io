@@ -28,6 +28,9 @@ h1 {
   font-size: 56px;
   margin-bottom: 12px;
   letter-spacing: -0.04em;
+  background: linear-gradient(90deg, #B08A5A, #00E0FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -36,8 +39,9 @@ h2 {
   margin-bottom: 18px;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #E6E3DE;
+  color: #B08A5A;
 }
+
 
 p {
   margin-bottom: 20px;
