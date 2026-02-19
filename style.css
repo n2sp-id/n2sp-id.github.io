@@ -132,23 +132,57 @@ nav a:hover {
   color: #121212;
 }
 
-/* ==============================
-   Moving Camera Background
-   ============================== */
+/* =========================
+   BACKGROUND SYSTEM
+========================= */
 
-.bg-camera {
+body::before {
+  content: "";
   position: fixed;
   inset: 0;
-  background: url("camera.png") repeat;
-  background-size: 260px;
-  opacity: 0.12;
-  z-index: -1;
+  z-index: -2;
+  pointer-events: none;
 
-  animation: moveBg 30s linear infinite;
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      rgba(0,255,255,0.12) 0px,
+      rgba(0,255,255,0.12) 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(0,255,255,0.08) 0deg,
+      rgba(0,255,255,0.08) 1deg,
+      transparent 1deg,
+      transparent 30deg
+    );
+
+  animation: rotateSystem 60s linear infinite;
 }
 
-@keyframes moveBg {
-  from { background-position: 0 0; }
-  to   { background-position: 400px 400px; }
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background: url("ai-blog-960x536.jpg") center/cover no-repeat;
+  opacity: 0.15;
+  filter: blur(2px);
+}
+
+@keyframes rotateSystem {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
