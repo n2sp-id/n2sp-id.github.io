@@ -136,35 +136,30 @@ nav a:hover {
    Moving Camera Background
    ============================== */
 
-body {
-  position: relative;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: "";
+.bg-camera {
   position: fixed;
-  top: -200px;
-  left: -200px;
-  width: 200%;
-  height: 200%;
+  inset: 0;
 
   background-image: url("camera.png");
   background-repeat: repeat;
   background-size: 120px;
 
-  opacity: 0.04; /* sangat subtle */
+  opacity: 0.05;
+
+  /* warna biar senada gold N2SP */
+  filter: sepia(1) saturate(4) hue-rotate(330deg);
+
+  pointer-events: none;
   z-index: -1;
 
-  animation: moveBackground 60s linear infinite;
+  animation: moveBackground 80s linear infinite;
 }
 
 @keyframes moveBackground {
   from {
-    transform: translate(0, 0);
+    background-position: 0 0;
   }
   to {
-    transform: translate(200px, 200px);
+    background-position: 400px 400px;
   }
 }
-
