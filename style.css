@@ -139,20 +139,10 @@ nav a:hover {
 .bg-camera {
   position: fixed;
   inset: 0;
-
-  background-image: url("camera.png");
-  background-repeat: repeat;
+  background: url("camera-white.png") repeat;
   background-size: 120px;
-
   opacity: 0.05;
-
-  /* warna biar senada gold N2SP */
-  filter: sepia(1) saturate(4) hue-rotate(330deg);
-
-  pointer-events: none;
   z-index: -1;
-
-  animation: moveBackground 80s linear infinite;
 }
 
 @keyframes moveBackground {
