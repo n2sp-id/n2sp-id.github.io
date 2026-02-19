@@ -140,17 +140,15 @@ nav a:hover {
   position: fixed;
   inset: 0;
   background: url("camera.png") repeat;
-  background-size: 120px;
-  opacity: 0.3;   /* naikkan dulu biar kelihatan */
+  background-size: 260px;
+  opacity: 0.06;
   z-index: -1;
+
+  animation: moveBg 30s linear infinite;
 }
 
-
-@keyframes moveBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 400px 400px;
-  }
+@keyframes moveBg {
+  from { background-position: 0 0; }
+  to   { background-position: 400px 400px; }
 }
+
