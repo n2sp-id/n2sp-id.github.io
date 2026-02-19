@@ -141,7 +141,7 @@ nav a:hover {
   inset: 0;
   background: url("camera.png") repeat;
   background-size: 260px;
-  opacity: 0.06;
+  opacity: 0.12;
   z-index: -1;
 
   animation: moveBg 30s linear infinite;
