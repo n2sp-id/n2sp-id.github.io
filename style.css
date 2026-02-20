@@ -192,7 +192,9 @@ html::before {
 
 .social-links {
   display: flex;
-  gap: 16px;
+  justify-content: center; /* ini yang bikin ke tengah */
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -202,7 +204,7 @@ html::before {
 }
 
 .social-links a:hover {
-  color: #e1306c; /* default hover (IG tone) */
+  color: #e1306c;
   transform: translateY(-2px);
 }
 
@@ -211,7 +213,7 @@ html::before {
 }
 
 .social-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
