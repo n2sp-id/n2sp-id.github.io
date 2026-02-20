@@ -190,3 +190,28 @@ html::before {
   to { transform: rotate(360deg); }
 }
 
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e1306c; /* default hover (IG tone) */
+  transform: translateY(-2px);
+}
+
+.social-links a.youtube:hover {
+  color: #ff0000;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
