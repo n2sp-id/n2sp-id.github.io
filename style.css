@@ -247,3 +247,11 @@ footer {
       border: 2px solid #00ffff;
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
     }
+/* FIX SIZE LOGO */
+.logo-n2sp {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
