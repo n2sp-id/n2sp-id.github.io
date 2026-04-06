@@ -1,7 +1,8 @@
 /* ==============================
-   N2SP Root Stylesheet (FIXED)
+   N2SP FINAL STYLESHEET
    ============================== */
 
+/* RESET */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -11,23 +12,24 @@ body {
 }
 
 /* ==============================
-   Container (CENTER FIX)
+   CONTAINER (CENTER FIX)
    ============================== */
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
   box-sizing: border-box;
 }
 
 /* ==============================
-   Typography
+   TYPOGRAPHY
    ============================== */
 
 h1 {
   font-size: 48px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   letter-spacing: -0.03em;
   background: linear-gradient(90deg, #B08A5A, #00E0FF);
   -webkit-background-clip: text;
@@ -36,9 +38,10 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 26px;
   margin-top: 60px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   color: #B08A5A;
 }
 
@@ -53,7 +56,7 @@ p {
 }
 
 /* ==============================
-   Navigation
+   NAVIGATION
    ============================== */
 
 nav {
@@ -73,7 +76,7 @@ nav a:hover {
 }
 
 /* ==============================
-   Hero
+   HERO
    ============================== */
 
 .hero {
@@ -87,32 +90,39 @@ nav a:hover {
 }
 
 /* ==============================
-   List Artikel (INI YANG FIX)
+   LIST ARTIKEL (FIX WARNA)
    ============================== */
 
 ul {
-  padding-left: 18px;
+  padding-left: 20px;
 }
 
 ul li {
   margin-bottom: 10px;
 }
 
-/* LINK ARTIKEL (BIRU MUDA FIX) */
-ul li a {
-  color: #5DADE2;
+/* FORCE LINK STYLE (ANTI BIRU TUA) */
+ul li a,
+ul li a:visited,
+ul li a:active {
+  color: #5DADE2 !important;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
 }
 
 ul li a:hover {
-  color: #00E0FF;
+  color: #00E0FF !important;
   text-decoration: underline;
 }
 
+/* GLOBAL LINK RESET */
+a {
+  color: inherit;
+}
+
 /* ==============================
-   Footer
+   FOOTER
    ============================== */
 
 footer {
@@ -123,9 +133,9 @@ footer {
   font-size: 14px;
 }
 
-/* =========================
-   BACKGROUND SYSTEM (KEEP)
-========================= */
+/* ==============================
+   BACKGROUND SYSTEM
+   ============================== */
 
 body::before {
   content: "";
