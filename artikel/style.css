@@ -1,5 +1,5 @@
 /* ==============================
-   N2SP Root Stylesheet
+   N2SP Root Stylesheet (FIXED)
    ============================== */
 
 body {
@@ -7,16 +7,17 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #121212;
   color: #E6E3DE;
+  line-height: 1.6;
 }
 
 /* ==============================
-   Global Container (Anti Melebar)
+   Container (CENTER FIX)
    ============================== */
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -25,27 +26,29 @@ body {
    ============================== */
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 12px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   background: linear-gradient(90deg, #B08A5A, #00E0FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 h2 {
-  font-size: 28px;
-  margin-top: 80px;
-  margin-bottom: 18px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-size: 26px;
+  margin-top: 60px;
+  margin-bottom: 16px;
   color: #B08A5A;
 }
 
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
 p {
   margin-bottom: 20px;
-  line-height: 1.7;
   color: #D0C7BC;
 }
 
@@ -54,90 +57,74 @@ p {
    ============================== */
 
 nav {
-  padding: 22px 20px;
-  font-size: 14px;
   text-align: center;
+  padding: 20px;
 }
 
 nav a {
   color: #E6E3DE;
   text-decoration: none;
-  margin: 0 14px;
-  border-bottom: 1px solid transparent;
-  transition: 0.3s ease;
+  margin: 0 12px;
+  transition: 0.3s;
 }
 
 nav a:hover {
   color: #B08A5A;
-  border-bottom: 1px solid #B08A5A;
 }
 
 /* ==============================
-   Hero Section
+   Hero
    ============================== */
 
 .hero {
-  margin-top: 110px;
+  margin-top: 100px;
   text-align: center;
-}
-
-.logo-n2sp {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 1.5px solid #B08A5A;
-  padding: 16px;
-  background: #121212;
-  margin-bottom: 28px;
 }
 
 .tagline {
   color: #B08A5A;
-  font-size: 18px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 /* ==============================
-   Highlight List
+   List Artikel (INI YANG FIX)
    ============================== */
 
-.highlight-list {
-  list-style: none;
-  padding: 0;
-  margin: 36px 0 50px;
-  text-align: center;
+ul {
+  padding-left: 18px;
 }
 
-.highlight-list li {
-  margin: 14px 0;
-  font-size: 18px;
-  color: #D0C7BC;
+ul li {
+  margin-bottom: 10px;
 }
 
-/* ==============================
-   Buttons
-   ============================== */
-
-.btn {
-  display: inline-block;
-  margin: 12px 10px 0;
-  padding: 12px 26px;
-  border: 1px solid #B08A5A;
-  color: #B08A5A;
+/* LINK ARTIKEL (BIRU MUDA FIX) */
+ul li a {
+  color: #5DADE2;
   text-decoration: none;
-  border-radius: 32px;
-  transition: 0.3s ease;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.btn:hover {
-  background: #B08A5A;
-  color: #121212;
+ul li a:hover {
+  color: #00E0FF;
+  text-decoration: underline;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
 }
 
 /* =========================
-   BACKGROUND SYSTEM
+   BACKGROUND SYSTEM (KEEP)
 ========================= */
 
 body::before {
@@ -181,99 +168,11 @@ html::before {
   inset: 0;
   z-index: -4;
   background: url("ai-blog-960x536.jpg") center/cover no-repeat;
-  opacity: 0.15;
+  opacity: 0.12;
   filter: blur(2px);
 }
 
 @keyframes rotateSystem {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-.social-links {
-  display: flex;
-  justify-content: center; /* ini yang bikin ke tengah */
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.social-links a {
-  color: #ccc;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #e1306c;
-  transform: translateY(-2px);
-}
-
-.social-links a.youtube:hover {
-  color: #ff0000;
-}
-
-.social-icon {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-
-/* CONTAINER TENGAH */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* SECTION BIAR IKUT RAPI */
-.section {
-  display: flex;
-  justify-content: center;
-}
-
-/* BIAR ISI DALAMNYA TETAP ENAK DIBACA */
-.section .container {
-  width: 100%;
-}
-
-/* LINK ARTIKEL */
-ul li a {
-  color: #5DADE2; /* biru muda */
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* HOVER EFFECT */
-ul li a:hover {
-  color: #2E86C1; /* biru agak lebih tua */
-  text-decoration: underline;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fafafa;
-  color: #333;
-}
-
-/* JUDUL UTAMA */
-.hero h1 {
-  text-align: center;
-}
-
-/* TAGLINE */
-.tagline {
-  text-align: center;
-  color: #777;
-}
-
-/* NAV */
-nav {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #333;
 }
