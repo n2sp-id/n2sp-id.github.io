@@ -13,27 +13,11 @@ html {
 body {
   margin: 0;
   line-height: 1.6;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #ffffff;
   text-align: center;
   background-color: #070b14;
   overflow-x: hidden;
-}
-
-/* =========================
-   CARD STYLE (BIAR KAYAK ATAS)
-========================= */
-
-.container {
-  max-width: 720px;
-  margin: 40px auto;
-  padding: 32px;
-  
-  background: rgba(20, 20, 20, 0.75);
-  backdrop-filter: blur(4px);
-  
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
 /* =========================
@@ -46,8 +30,16 @@ a {
   transition: 0.3s ease;
 }
 
+a:visited {
+  color: #00ffff;
+}
+
 a:hover {
   color: #ffffff;
+}
+
+a:active {
+  color: #00ffff;
 }
 
 /* =========================
@@ -71,13 +63,13 @@ body::before {
     ),
     repeating-conic-gradient(
       from 0deg,
-      rgba(0,255,255,0.08) 0deg,
-      rgba(0,255,255,0.08) 1deg,
+      rgba(0,255,255,0.18) 0deg,
+      rgba(0,255,255,0.18) 1deg,
       transparent 1deg,
       transparent 30deg
     );
 
-  animation: rotateSystem 90s linear infinite;
+  animation: rotateSystem 60s linear infinite;
 }
 
 body::after {
@@ -105,17 +97,27 @@ html::before {
 }
 
 /* =========================
+   CONTAINER
+========================= */
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* =========================
    NAVIGATION
 ========================= */
 
 nav {
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 nav a {
-  margin: 0 14px;
+  margin: 0 18px;
   font-size: 14px;
-  color: #aaa;
+  color: #cccccc;
 }
 
 nav a:hover {
@@ -123,53 +125,87 @@ nav a:hover {
 }
 
 /* =========================
-   TYPOGRAPHY
+   TYPOGRAPHY SYSTEM
 ========================= */
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 52px;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #00ffff, #00ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
-  font-size: 20px;
-  margin-top: 32px;
-  border-left: 4px solid #00ffff;
-  padding-left: 12px;
-  text-align: left;
+  font-size: 24px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+h2:hover {
+  color: #ffffff;          /* warna berubah */
+  transform: scale(1.2);   /* membesar */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; 
 }
 
 p {
-  font-size: 15px;
-  color: #ccc;
-  margin: 12px 0;
-  text-align: left;
+  font-size: 16px;
+  color: #cccccc;
+  margin: 18px 0;
 }
 
 /* =========================
-   LIST
+   LIST SYSTEM
 ========================= */
 
 .highlight-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
-  text-align: left;
+  margin: 30px 0;
 }
 
 .highlight-list li {
-  margin: 12px 0;
-  font-size: 16px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  transform-origin: left; /* biar membesar ke kanan */
 }
 
+.highlight-list li a {
+  color: inherit;
+}
+
+.highlight-list li:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff; 
+}
 /* =========================
    DIVIDER
 ========================= */
 
 .divider {
   height: 1px;
-  background: #333;
-  margin: 28px 0;
+  background: rgba(255,255,255,0.1);
+  margin: 40px 0;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  margin: 120px auto 0 auto;
+  padding: 40px 32px;
+  background: transparent;
 }
 
 /* =========================
@@ -178,17 +214,19 @@ p {
 
 .btn {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 20px;
   padding: 12px 28px;
-  border-radius: 12px;
-  background: #00ffff;
-  color: #000;
-  font-weight: bold;
-  transition: 0.3s;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: #00cccc;
+  background: #00ffff;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(0,255,255,0.6);
 }
 
 /* =========================
@@ -196,7 +234,62 @@ p {
 ========================= */
 
 footer {
-  margin-top: 40px;
-  font-size: 12px;
-  color: #aaa;
+  margin-top: 100px;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+ .profile-img {
+      width: 180px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+/* FIX SIZE LOGO */
+.logo-n2sp {
+   width: 180px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* ==============================
+   SOCIAL ICON FIX
+   ============================== */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* UKURAN ICON */
+.social-icon {
+  width: 22px;
+  height: 22px;
+  fill: #ccc;
+  transition: 0.3s ease;
+}
+
+/* LINK WRAPPER */
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOVER INSTAGRAM */
+.social-links a:hover .social-icon {
+  fill: #e1306c;
+  transform: translateY(-2px);
+}
+
+/* HOVER YOUTUBE */
+.social-links a.youtube:hover .social-icon {
+  fill: #ff0000;
 }
