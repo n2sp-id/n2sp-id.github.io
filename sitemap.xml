@@ -1,24 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-<url>
-<loc>https://n2sp-id.github.io</loc>
-</url>
 
-<url>
-<loc>https://n2sp-id.github.io/index.html</loc>
-</url>
+  <!-- MAIN -->
+  <url>
+    <loc>https://n2sp-id.github.io/</loc>
+  </url>
 
-<url>
-<loc>https://n2sp-id.github.io/tentang.html</loc>
-</url>  
+  <url>
+    <loc>https://n2sp-id.github.io/index.html</loc>
+  </url>
 
-<url>
-<loc>https://n2sp-id.github.io/aktifitas.html</loc>
-</url>  
+  <url>
+    <loc>https://n2sp-id.github.io/tentang.html</loc>
+  </url>  
 
-<url>
-<loc>https://n2sp-id.github.io/proposal-kolaborasi.html</loc>
-</url>  
-  
-</urlset>  
+  <url>
+    <loc>https://n2sp-id.github.io/aktifitas.html</loc>
+  </url>  
+
+  <url>
+    <loc>https://n2sp-id.github.io/proposal-kolaborasi.html</loc>
+  </url>  
+
+  <!-- ARTIKEL INDEX -->
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/index.html</loc>
+  </url>
+
+  <!-- EVENT -->
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/ngabuburit-fotografi-braga.html</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/threshold-of-sunset-ciwalk.html</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/light-before-eid-braga.html</loc>
+  </url>
+
+  <!-- BRAGA -->
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/street-photo-braga-n2sp.html</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/ritme-visual-braga.html</loc>
+  </url>
+
+  <!-- SEMIOTIKA -->
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/makna-di-balik-foto.html</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/narasi-visual-kota.html</loc>
+  </url>
+
+  <!-- G-LOOP -->
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/g-loop-n2sp-case-study.html</loc>
+  </url>
+
+  <url>
+    <loc>https://n2sp-id.github.io/artikel/strategi-visual-google-maps.html</loc>
+  </url>
+
+</urlset>
