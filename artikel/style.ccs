@@ -217,3 +217,63 @@ html::before {
   height: 24px;
   fill: currentColor;
 }
+
+/* CONTAINER TENGAH */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* SECTION BIAR IKUT RAPI */
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+/* BIAR ISI DALAMNYA TETAP ENAK DIBACA */
+.section .container {
+  width: 100%;
+}
+
+/* LINK ARTIKEL */
+ul li a {
+  color: #5DADE2; /* biru muda */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HOVER EFFECT */
+ul li a:hover {
+  color: #2E86C1; /* biru agak lebih tua */
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* JUDUL UTAMA */
+.hero h1 {
+  text-align: center;
+}
+
+/* TAGLINE */
+.tagline {
+  text-align: center;
+  color: #777;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
