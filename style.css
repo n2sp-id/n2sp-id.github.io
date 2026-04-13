@@ -605,3 +605,13 @@ a:hover {
 .social-links a.youtube:hover .social-icon {
   fill: #ff0000;
 }
+
+video {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+}
+
+video::-webkit-media-controls {
+  filter: brightness(0.9) contrast(1.1);
+}
