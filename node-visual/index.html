@@ -4,43 +4,7 @@
   <meta charset="UTF-8">
   <title>Node Visual — N2SP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
-
-  <style>
-    .meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 14px;
-      padding: 10px 0;
-      border-bottom: 1px solid #1f1f1f;
-    }
-
-    .meta span {
-      font-size: 14px;
-      letter-spacing: 1px;
-      color: #ccc;
-    }
-
-    .btn-podcast {
-      display: inline-block;
-      padding: 6px 14px;
-      background-color: #111;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 20px;
-      font-size: 12px;
-      letter-spacing: 1px;
-      border: 1px solid #222;
-      transition: all 0.3s ease;
-    }
-
-    .btn-podcast:hover {
-      background-color: #e1306c;
-      border-color: #e1306c;
-      transform: translateY(-2px);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -54,70 +18,73 @@
   <a href="index.html">Node Visual</a>
 </nav>
 
-<h1>Node Visual</h1>
-<p class="intro">
-  Node Visual adalah arsip peristiwa visual dalam ekosistem N2SP.
-  Setiap node merekam aktivitas nyata, konteks ruang, dan interaksi manusia
-  sebagai jejak digital yang berkelanjutan.
-</p>
-
-<div class="meta">
-  <span>PODCAST N2SP</span>
-  <a href="https://www.instagram.com/reel/DPTaXrakUXb/" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-podcast">
-     PODCAST
-  </a>
+<!-- HERO -->
+<div class="hero">
+  <h1>Node Visual</h1>
+  <p>Arsip video aktivitas dalam ekosistem N2SP</p>
 </div>
 
-<div class="meta">
-  <span>EVENT N2SP</span>
-  <a href="https://www.instagram.com/reel/DQ9UzBtkjdQ/" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-podcast">
-     EVENT
-  </a>
-</div>
+<!-- GRID VIDEO -->
+<div class="grid-2">
 
-<div class="meta">
-  <span>LIPUTAN EVENT N2SP</span>
-  <a href="https://www.instagram.com/reel/DRHKzjoEaeD/" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-podcast">
-     LIPUTAN
-  </a>
-</div>
-
-<div class="meta">
-  <span>KOLABORASI</span>
-  <a href="https://www.instagram.com/reel/DRhj7-iEmbM/" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-podcast">
-     KOLABORASI
-  </a>
-</div>
-
-<div class="meta">
-  <span>PAMERAN N2SP</span>
-  <a href="https://www.instagram.com/reel/DRPJ1TtEXMG/" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="btn-podcast">
-     PAMERAN
-  </a>
-</div>
-
-</div>
-
-<footer>
-  <div class="container">
-    © N2SP — Ngopi Ngopi Sambil Phopotoan
+  <!-- 1 -->
+  <div class="card">
+    <video class="content-img" controls poster="thumbnail/podcast.jpg">
+      <source src="video/podcast.mp4" type="video/mp4">
+    </video>
+    <h3>Podcast N2SP</h3>
+    <p>Percakapan santai seputar fotografi & proses kreatif.</p>
   </div>
-</footer>
+
+  <!-- 2 -->
+  <div class="card">
+    <video class="content-img" controls poster="thumbnail/event.jpg">
+      <source src="video/event.mp4" type="video/mp4">
+    </video>
+    <h3>Event N2SP</h3>
+    <p>Ngopi, photowalk, dan interaksi visual komunitas.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <video class="content-img" controls poster="thumbnail/liputan.jpg">
+      <source src="video/liputan.mp4" type="video/mp4">
+    </video>
+    <h3>Liputan Event</h3>
+    <p>Dokumentasi kegiatan publik & kolaborasi.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <video class="content-img" controls poster="thumbnail/kolaborasi.jpg">
+      <source src="video/kolaborasi.mp4" type="video/mp4">
+    </video>
+    <h3>Kolaborasi</h3>
+    <p>Visual branding bersama UMKM & komunitas.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <video class="content-img" controls poster="thumbnail/pameran.jpg">
+      <source src="video/pameran.mp4" type="video/mp4">
+    </video>
+    <h3>Pameran N2SP</h3>
+    <p>Presentasi karya sebagai bagian dari arsip visual.</p>
+  </div>
+
+</div>
+
+<!-- CLOSING -->
+<div class="section">
+  <div class="card">
+    <p>
+      Node Visual adalah arsip hidup berbasis video yang merekam aktivitas nyata,
+      membentuk jejak digital N2SP secara berkelanjutan.
+    </p>
+  </div>
+</div>
+
+</div>
 
 </body>
 </html>
