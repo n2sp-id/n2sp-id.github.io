@@ -470,6 +470,13 @@ a:hover {
   border-radius: 12px;
 }
 
+.logo-n2sp {
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
 
 /* =========================
    INSTAGRAM
