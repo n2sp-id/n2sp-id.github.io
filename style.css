@@ -467,6 +467,9 @@ a:hover {
   margin: 30px auto 10px;
   display: block;
   border-radius: 12px;
+  max-width: 600px;   /* batas maksimal ukuran */
+  width: 100%;        /* biar responsif */
+  height: auto;       /* jaga rasio */
 }
 
 .logo-n2sp {
