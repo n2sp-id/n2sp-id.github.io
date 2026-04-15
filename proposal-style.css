@@ -18,6 +18,25 @@ body {
   line-height: 1.7;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0,200,255,0.15), transparent 70%);
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background: url("assets/background.jpg") center/cover no-repeat;
+  opacity: 0.25;
+  filter: blur(2px);
+}
+
 /* =========================
    CONTAINER
 ========================= */
