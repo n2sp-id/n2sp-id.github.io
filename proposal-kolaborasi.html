@@ -222,7 +222,7 @@ li{margin-bottom:6px;}
 
 /* logo lebih besar */
 .logo-track img{
-  height:80px;
+  height:120px;
   flex-shrink:0;
   opacity:0.8;
   transition:0.3s;
@@ -257,20 +257,31 @@ li{margin-bottom:6px;}
 </head>
   
 <script>
-const slider = document.getElementById('logoSlider');
-const track = slider.querySelector('.logo-track');
+document.addEventListener("DOMContentLoaded", function(){
 
-let scrollAmount = 0;
+  const slider = document.getElementById('logoSlider');
+  const track = slider.querySelector('.logo-track');
 
-document.querySelector('.next').addEventListener('click', () => {
-  scrollAmount += 200;
-  track.style.transform = `translateX(-${scrollAmount}px)`;
-});
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
 
-document.querySelector('.prev').addEventListener('click', () => {
-  scrollAmount -= 200;
-  if(scrollAmount < 0) scrollAmount = 0;
-  track.style.transform = `translateX(-${scrollAmount}px)`;
+  let scrollAmount = 0;
+
+  const scrollStep = 200;
+  const maxScroll = track.scrollWidth - slider.clientWidth;
+
+  nextBtn.addEventListener('click', () => {
+    scrollAmount += scrollStep;
+    if(scrollAmount > maxScroll) scrollAmount = maxScroll;
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    scrollAmount -= scrollStep;
+    if(scrollAmount < 0) scrollAmount = 0;
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  });
+
 });
 </script>
 <body>
