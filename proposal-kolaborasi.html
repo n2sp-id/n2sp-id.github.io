@@ -209,20 +209,18 @@ li{margin-bottom:6px;}
 
 /* area scroll */
 .logo-slider{
-  overflow:hidden;
-  width:100%;
+  overflow-x:auto;
+  scroll-behavior:smooth;
 }
 
-/* track */
 .logo-track{
   display:flex;
   gap:40px;
-  transition:transform 0.4s ease;
 }
 
 /* logo lebih besar */
 .logo-track img{
-  height:120px;
+  height:150px;
   flex-shrink:0;
   opacity:0.8;
   transition:0.3s;
@@ -260,26 +258,24 @@ li{margin-bottom:6px;}
 document.addEventListener("DOMContentLoaded", function(){
 
   const slider = document.getElementById('logoSlider');
-  const track = slider.querySelector('.logo-track');
 
   const nextBtn = document.querySelector('.next');
   const prevBtn = document.querySelector('.prev');
 
-  let scrollAmount = 0;
-
-  const scrollStep = 200;
-  const maxScroll = track.scrollWidth - slider.clientWidth;
+  const scrollStep = 300;
 
   nextBtn.addEventListener('click', () => {
-    scrollAmount += scrollStep;
-    if(scrollAmount > maxScroll) scrollAmount = maxScroll;
-    track.style.transform = `translateX(-${scrollAmount}px)`;
+    slider.scrollBy({
+      left: scrollStep,
+      behavior: 'smooth'
+    });
   });
 
   prevBtn.addEventListener('click', () => {
-    scrollAmount -= scrollStep;
-    if(scrollAmount < 0) scrollAmount = 0;
-    track.style.transform = `translateX(-${scrollAmount}px)`;
+    slider.scrollBy({
+      left: -scrollStep,
+      behavior: 'smooth'
+    });
   });
 
 });
