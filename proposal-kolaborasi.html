@@ -38,11 +38,40 @@ nav a{
 
 /* HERO */
 .hero{
+  position:relative;
+  height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:80px 20px 40px;
+  color:#fff;
+  overflow:hidden;
 }
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:url('/assets/aktivitas-n2sp-bandung.webp') center/cover;
+  filter:brightness(0.4);
+}
+
+.hero-content{
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+  
 .profile-img{
-  width:90px;
+  width:80px;
   margin-bottom:20px;
 }
 
@@ -157,10 +186,17 @@ li{margin-bottom:6px;}
 
 <!-- HERO -->
 <section class="hero fade-in">
-  <img src="logo-n2sp.png" class="profile-img">
-  <h1>Proposal Kolaborasi</h1>
-  <p>N2SP — Ngopi Ngopi Sambil Phopotoan</p>
-  <p>Bandung, Indonesia</p>
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <img src="logo-n2sp.png" class="profile-img">
+
+    <h1>Proposal Kolaborasi</h1>
+    <p>N2SP — Ngopi Ngopi Sambil Phopotoan</p>
+    <p>Bandung, Indonesia</p>
+
+    <a href="https://wa.me/6285174223650" class="btn">Mulai Diskusi</a>
+  </div>
 </section>
 
 <!-- TENTANG -->
