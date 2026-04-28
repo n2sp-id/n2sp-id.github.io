@@ -6,20 +6,19 @@
 
 <title>Proposal Kolaborasi | N2SP Visual Archive</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
+  font-family:'Inter',sans-serif;
   line-height:1.7;
   color:#222;
   background:#fafafa;
 }
 
+/* NAV */
 nav{
   padding:20px;
   text-align:center;
@@ -27,9 +26,10 @@ nav{
 nav a{
   text-decoration:none;
   color:#333;
-  font-weight:bold;
+  font-weight:600;
 }
 
+/* CONTAINER */
 .container{
   max-width:900px;
   margin:auto;
@@ -41,25 +41,16 @@ nav a{
   text-align:center;
   padding:80px 20px 40px;
 }
-
 .profile-img{
   width:90px;
   margin-bottom:20px;
 }
 
-h1{
-  font-size:36px;
-  margin-bottom:10px;
-}
+h1{font-size:36px;margin-bottom:10px;}
+h2{font-size:26px;margin-bottom:20px;}
+h3{margin-bottom:10px;}
 
-h2{
-  font-size:26px;
-  margin-bottom:20px;
-}
-
-p{
-  margin-bottom:16px;
-}
+p{margin-bottom:16px;}
 
 /* SECTION */
 .section{
@@ -81,6 +72,12 @@ p{
   border-radius:12px;
   box-shadow:0 8px 20px rgba(0,0,0,0.05);
   margin:20px 0;
+  transition:all 0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.12);
 }
 
 /* GRID */
@@ -114,8 +111,39 @@ p{
   color:#fff;
   border-radius:30px;
   text-decoration:none;
+  font-weight:600;
 }
 
+/* LIST */
+ul{
+  margin:10px 0 10px 18px;
+}
+li{margin-bottom:6px;}
+
+/* FADE IN */
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease;
+}
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* WHATSAPP FLOAT */
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  font-size:22px;
+  padding:14px 16px;
+  border-radius:50%;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
 </style>
 </head>
 
@@ -128,7 +156,7 @@ p{
 <div class="container">
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero fade-in">
   <img src="logo-n2sp.png" class="profile-img">
   <h1>Proposal Kolaborasi</h1>
   <p>N2SP — Ngopi Ngopi Sambil Phopotoan</p>
@@ -136,61 +164,37 @@ p{
 </section>
 
 <!-- TENTANG -->
-<section class="section">
+<section class="section fade-in">
   <h2>Tentang N2SP</h2>
-
-  <p>
-    N2SP merupakan ekosistem komunitas fotografi berbasis aktivitas 
-    yang berkembang di Bandung sejak 2017.
-  </p>
-
-  <p>
-    Berawal dari ruang berbagi karya, N2SP tumbuh menjadi wadah dokumentasi visual 
-    yang menangkap dinamika kreatif secara nyata.
-  </p>
+  <p>N2SP merupakan komunitas fotografi berbasis aktivitas sejak 2017.</p>
+  <p>Berkembang menjadi arsip visual hidup yang merekam dinamika nyata.</p>
 </section>
 
 <!-- LATAR -->
-<section class="section">
+<section class="section fade-in">
   <h2>Latar Belakang</h2>
-
-  <p>
-    Banyak brand memiliki aktivitas nyata, namun belum terhubung dengan visibilitas digital.
-  </p>
-
-  <p>
-    Dokumentasi sering berhenti sebagai arsip, bukan sebagai sistem.
-  </p>
-
+  <p>Banyak brand belum terhubung dengan visibilitas digital.</p>
   <div class="card">
-    Kesenjangan antara aktivitas nyata dan keterbacaan digital menjadi peluang strategis.
+    Dokumentasi sering berhenti sebagai arsip, bukan sistem visibilitas.
   </div>
 </section>
 
-<img src="/assets/aktivitas-n2sp-bandung.webp" class="content-img">
+<img src="/assets/aktivitas-n2sp-bandung.webp" class="content-img fade-in">
 
-<section class="section">
+<section class="section fade-in">
   <div class="card">
-    <strong>N2SP bukan sekadar komunitas fotografi.</strong><br>
-    N2SP adalah arsip visual hidup yang membangun makna dari aktivitas berkelanjutan.
+    <strong>N2SP bukan sekadar komunitas.</strong><br>
+    Ini adalah arsip visual hidup.
   </div>
-
   <h3>Fokus Visual</h3>
-  <p>
-    Human interest · Travel · Storytelling · Dokumentasi komunitas & brand
-  </p>
+  <p>Human interest · Travel · Storytelling · Dokumentasi brand</p>
 </section>
 
-<img src="/assets/pendekatan-gloop-method-n2sp.webp" class="content-img">
+<img src="/assets/pendekatan-gloop-method-n2sp.webp" class="content-img fade-in">
 
 <!-- GLOOP -->
-<section class="section">
-  <h2>Pendekatan: G-Loop Method</h2>
-
-  <p>
-    Pendekatan yang menghubungkan aktivitas nyata dengan visibilitas digital.
-  </p>
-
+<section class="section fade-in">
+  <h2>G-Loop Method</h2>
   <div class="gloop-flow">
     <div class="gloop-node">Experience</div>
     <div class="gloop-node">Reflection</div>
@@ -199,43 +203,67 @@ p{
   </div>
 </section>
 
-<img src="/assets/nilai-kolaborasi-dengan-n2sp.webp" class="content-img">
+<img src="/assets/nilai-kolaborasi-dengan-n2sp.webp" class="content-img fade-in">
 
 <!-- NILAI -->
-<section class="section">
+<section class="section fade-in">
   <h2>Nilai Kolaborasi</h2>
-
   <div class="grid-2">
-    <div class="card">Dokumentasi berbasis aktivitas nyata</div>
+    <div class="card">Dokumentasi nyata</div>
     <div class="card">Visibilitas digital</div>
     <div class="card">Kredibilitas brand</div>
     <div class="card">Arsip jangka panjang</div>
   </div>
 </section>
 
-<section class="section">
+<!-- TARGET -->
+<section class="section fade-in">
   <h2>Target Kolaborasi</h2>
-
-  <div class="card">
-    Brand, UMKM, komunitas, dan pelaku kreatif yang ingin tumbuh secara digital.
-  </div>
+  <div class="card">Brand, UMKM, komunitas kreatif</div>
 </section>
 
 <!-- PAKET -->
-<section class="section">
+<section class="section fade-in">
   <h2>Paket Kolaborasi</h2>
 
   <div class="grid-2">
-    <div class="card"><strong>ARCHIVE</strong><br>Dokumentasi dasar</div>
-    <div class="card"><strong>GROWTH</strong><br>Aktivasi visibilitas</div>
-    <div class="card"><strong>VISIBILITY</strong><br>Program strategis</div>
+
+    <div class="card">
+      <h3>ARCHIVE</h3>
+      <ul>
+        <li>1 sesi dokumentasi</li>
+        <li>15–25 foto</li>
+        <li>1 artikel</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>GROWTH</h3>
+      <ul>
+        <li>2 sesi</li>
+        <li>30–50 foto</li>
+        <li>2 artikel SEO</li>
+        <li>Multi platform</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>VISIBILITY</h3>
+      <ul>
+        <li>Program 3 bulan</li>
+        <li>Konten rutin</li>
+        <li>Strategi SEO</li>
+        <li>Integrasi digital</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
 <!-- TAMBAHAN -->
-<section class="section">
+<section class="section fade-in">
   <h2>Penawaran Tambahan</h2>
-
   <div class="grid-2">
     <div class="card">Co-Creation</div>
     <div class="card">Event Documentation</div>
@@ -244,20 +272,17 @@ p{
   </div>
 </section>
 
-<img src="/assets/proposal3.webp" class="content-img">
+<img src="/assets/proposal3.webp" class="content-img fade-in">
 
-<section class="section">
-  <h2>Keuntungan Kolaborasi</h2>
-  <div class="card">
-    Visibilitas · Kredibilitas · Distribusi · Arsip jangka panjang
-  </div>
+<section class="section fade-in">
+  <h2>Keuntungan</h2>
+  <div class="card">Visibilitas · Kredibilitas · Distribusi</div>
 </section>
 
-<img src="/assets/alur-kolaborasi-n2sp.webp" class="content-img">
+<img src="/assets/alur-kolaborasi-n2sp.webp" class="content-img fade-in">
 
-<section class="section">
-  <h2>Alur Kolaborasi</h2>
-
+<section class="section fade-in">
+  <h2>Alur</h2>
   <div class="gloop-flow">
     <div class="gloop-node">Diskusi</div>
     <div class="gloop-node">Konsep</div>
@@ -267,44 +292,43 @@ p{
   </div>
 </section>
 
-<section class="section">
-  <h2>Validasi Visibilitas</h2>
-
-  <p>
-    Dokumentasi berbasis aktivitas terbukti meningkatkan keterlihatan di Google.
-  </p>
-
+<section class="section fade-in">
+  <h2>Validasi</h2>
   <img src="/assets/hasil-pencarian-google-hijab-premium-bandung.webp" class="content-img">
-
-  <p>
-    Aktivitas yang konsisten membentuk visibilitas secara organik.
-  </p>
 </section>
 
-<section class="section">
+<section class="section fade-in">
   <h2>Mulai Kolaborasi</h2>
-
-  <p>Kami siap diskusi untuk kebutuhan brand Anda.</p>
-
   <a href="https://wa.me/6285174223650" class="btn">Mulai Diskusi</a>
 </section>
 
-<section class="section">
+<section class="section fade-in">
   <h2>Penutup</h2>
-
-  <p>
-    N2SP membangun sistem visibilitas melalui dokumentasi yang berkelanjutan.
-  </p>
+  <p>N2SP membangun visibilitas melalui aktivitas nyata.</p>
 </section>
 
-<img src="/assets/gunawan-satyakusuma-n2sp.webp" class="content-img">
+<img src="/assets/gunawan-satyakusuma-n2sp.webp" class="content-img fade-in">
 
-<section class="section">
+<section class="section fade-in">
   <p>Hormat kami,</p>
   <p><strong>N2SP</strong></p>
 </section>
 
 </div>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/6285174223650" class="wa-float">💬</a>
+
+<!-- ANIMATION SCRIPT -->
+<script>
+const els=document.querySelectorAll('.fade-in');
+const obs=new IntersectionObserver(e=>{
+e.forEach(x=>{
+if(x.isIntersecting){x.target.classList.add('show');}
+});
+});
+els.forEach(el=>obs.observe(el));
+</script>
 
 </body>
 </html>
