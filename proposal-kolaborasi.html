@@ -1,136 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Proposal Kolaborasi | N2SP Visual Archive</title>
-  <meta name="description" content="Proposal kolaborasi N2SP Bandung berbasis Living Visual Archive dan G-Loop Method untuk meningkatkan visibilitas dan kredibilitas brand.">
+<title>Proposal Kolaborasi | N2SP Visual Archive</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{line-height:1.7;color:#222;}
 
-    body {
-      line-height: 1.7;
-      color: #222;
-    }
+h1{font-size:42px;}
+h2{font-size:28px;margin-bottom:20px;}
+p{margin-bottom:16px;}
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+.section{padding:80px 20px;}
+.container{max-width:900px;margin:auto;}
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
+.dark{background:#111;color:#fff;}
+.light{background:#f5f5f5;}
+.center{text-align:center;}
 
-    p {
-      margin-bottom: 16px;
-    }
+/* HERO */
+.hero{
+  height:100vh;
+  background:url('/assets/aktivitas-n2sp-bandung.webp') center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+.hero-overlay{
+  background:rgba(0,0,0,0.6);
+  padding:40px;
+  border-radius:12px;
+  text-align:center;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  background:#fff;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-    /* HERO */
-    .hero {
-      height: 100vh;
-      background: url('/assets/aktivitas-n2sp-bandung.webp') center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      color: white;
-      text-align: center;
-    }
+/* FULL IMAGE */
+.image-full{
+  position:relative;
+}
+.image-full img{
+  width:100%;
+  height:90vh;
+  object-fit:cover;
+}
+.overlay-text{
+  position:absolute;
+  bottom:40px;
+  left:40px;
+  color:#fff;
+  font-size:26px;
+  max-width:500px;
+}
 
-    .hero-overlay {
-      background: rgba(0,0,0,0.6);
-      padding: 40px;
-      border-radius: 12px;
-    }
+/* SEQUENCE */
+.visual-sequence{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+.visual-sequence img{
+  width:100%;
+  height:60vh;
+  object-fit:cover;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #fff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
+/* CARD */
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:20px;
+}
+.dark .card{
+  background:#1a1a1a;
+}
 
-    /* SECTION */
-    .section {
-      padding: 80px 20px;
-    }
+/* GRID */
+.grid-2{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
 
-    .dark {
-      background: #111;
-      color: #fff;
-    }
-
-    .light {
-      background: #f5f5f5;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    /* IMAGE BLOCK */
-    .image-block img {
-      width: 100%;
-      height: 80vh;
-      object-fit: cover;
-    }
-
-    /* CARD */
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      margin-bottom: 20px;
-    }
-
-    .dark .card {
-      background: #1a1a1a;
-      color: #fff;
-    }
-
-    /* GRID */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    /* FLOW */
-    .flow {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .flow div {
-      padding: 10px 20px;
-      background: #222;
-      color: #fff;
-      border-radius: 20px;
-    }
-
-  </style>
+/* FLOW */
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+}
+.flow div{
+  padding:10px 20px;
+  background:#222;
+  color:#fff;
+  border-radius:20px;
+}
+</style>
 </head>
 
 <body>
@@ -139,8 +119,16 @@
 <section class="hero">
   <div class="hero-overlay">
     <h1>Visual Bukan Sekadar Dokumentasi</h1>
-    <p>Membangun Visibilitas Brand Melalui Aktivitas Nyata</p>
+    <p>Membangun Visibilitas Brand dari Aktivitas Nyata</p>
     <a href="https://wa.me/6285174223650" class="btn">Mulai Diskusi</a>
+  </div>
+</section>
+
+<!-- VISUAL OPEN -->
+<section class="image-full">
+  <img src="/assets/aktivitas-n2sp-bandung.webp">
+  <div class="overlay-text">
+    Aktivitas nyata adalah titik awal visibilitas.
   </div>
 </section>
 
@@ -149,15 +137,16 @@
   <div class="container">
     <h2>Tentang N2SP</h2>
     <p>
-      N2SP adalah komunitas fotografi berbasis aktivitas yang berkembang di Bandung sejak 2017.
-      Lebih dari sekadar ruang berbagi karya, N2SP berfungsi sebagai arsip visual hidup yang
-      merekam dan membangun makna dari setiap aktivitas.
+      N2SP adalah komunitas fotografi berbasis aktivitas di Bandung sejak 2017.
+      Lebih dari dokumentasi, N2SP membangun arsip visual hidup yang terus berkembang.
     </p>
   </div>
 </section>
 
-<!-- IMAGE -->
-<section class="image-block">
+<!-- SEQUENCE -->
+<section class="visual-sequence">
+  <img src="/assets/proposal3.webp">
+  <img src="/assets/gunawan-satyakusuma-n2sp.webp">
   <img src="/assets/aktivitas-n2sp-bandung.webp">
 </section>
 
@@ -166,36 +155,30 @@
   <div class="container">
     <h2>Latar Belakang</h2>
     <p>
-      Banyak brand memiliki aktivitas nyata, namun belum terhubung dengan visibilitas digital.
-      Dokumentasi sering berhenti sebagai arsip, bukan sebagai sistem.
+      Banyak brand memiliki aktivitas nyata, namun tidak terhubung dengan visibilitas digital.
     </p>
-
     <div class="card">
-      Kesenjangan antara aktivitas nyata dan keterbacaan digital adalah peluang strategis.
+      Dokumentasi sering berhenti sebagai arsip, bukan sebagai sistem visibilitas.
     </div>
   </div>
 </section>
 
-<!-- STATEMENT -->
-<section class="section dark center">
-  <h2>
-    Dokumentasi tanpa sistem<br>
-    hanya akan menjadi arsip.
-  </h2>
+<!-- GLOOP VISUAL -->
+<section class="image-full">
+  <img src="/assets/pendekatan-gloop-method-n2sp.webp">
+  <div class="overlay-text">
+    Aktivitas → Sistem → Visibilitas
+  </div>
 </section>
 
 <!-- GLOOP -->
-<section class="section">
-  <div class="container center">
-    <h2>G-Loop Method</h2>
-    <p>Pendekatan yang menghubungkan aktivitas nyata dengan visibilitas digital.</p>
-
-    <div class="flow">
-      <div>Experience</div>
-      <div>Reflection</div>
-      <div>Abstraction</div>
-      <div>Documentation</div>
-    </div>
+<section class="section center">
+  <h2>G-Loop Method</h2>
+  <div class="flow">
+    <div>Experience</div>
+    <div>Reflection</div>
+    <div>Abstraction</div>
+    <div>Documentation</div>
   </div>
 </section>
 
@@ -203,44 +186,58 @@
 <section class="section light">
   <div class="container">
     <h2>Nilai Kolaborasi</h2>
-
     <div class="grid-2">
       <div class="card">Dokumentasi berbasis aktivitas nyata</div>
-      <div class="card">Visibilitas di mesin pencarian</div>
+      <div class="card">Visibilitas digital</div>
       <div class="card">Kredibilitas brand</div>
       <div class="card">Arsip jangka panjang</div>
     </div>
   </div>
 </section>
 
-<!-- PAKET -->
+<!-- VISUAL NILAI -->
+<section class="image-full">
+  <img src="/assets/nilai-kolaborasi-dengan-n2sp.webp">
+  <div class="overlay-text">
+    Visual yang konsisten membentuk persepsi brand.
+  </div>
+</section>
+
+<!-- VALIDASI -->
 <section class="section">
   <div class="container">
-    <h2>Paket Kolaborasi</h2>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3>ARCHIVE</h3>
-        <p>1 sesi dokumentasi dasar</p>
-      </div>
-
-      <div class="card">
-        <h3>GROWTH</h3>
-        <p>Aktivasi visibilitas multi platform</p>
-      </div>
-
-      <div class="card">
-        <h3>VISIBILITY ADVISORY</h3>
-        <p>Program strategis 3 bulan</p>
-      </div>
+    <h2>Validasi Visibilitas</h2>
+    <div class="card">
+      <p><strong>Sebelum:</strong> Aktivitas tidak terhubung</p>
+      <p><strong>Sesudah:</strong> Muncul di hasil pencarian Google</p>
     </div>
   </div>
+</section>
+
+<section class="image-full">
+  <img src="/assets/hasil-pencarian-google-hijab-premium-bandung.webp">
+</section>
+
+<!-- ALUR -->
+<section class="section dark center">
+  <h2>Alur Kolaborasi</h2>
+  <div class="flow">
+    <div>Diskusi</div>
+    <div>Konsep</div>
+    <div>Produksi</div>
+    <div>Publikasi</div>
+    <div>Evaluasi</div>
+  </div>
+</section>
+
+<section class="image-full">
+  <img src="/assets/alur-kolaborasi-n2sp.webp">
 </section>
 
 <!-- CTA -->
 <section class="section dark center">
   <h2>Siap Meningkatkan Visibilitas Brand Anda?</h2>
-  <p>Klik di bawah untuk diskusi dan cek jadwal yang tersedia.</p>
+  <p>Klik di bawah untuk mulai diskusi.</p>
   <a href="https://wa.me/6285174223650" class="btn">Mulai Sekarang</a>
 </section>
 
