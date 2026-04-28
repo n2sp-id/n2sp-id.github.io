@@ -7,265 +7,249 @@
   <title>Proposal Kolaborasi | N2SP Visual Archive</title>
   <meta name="description" content="Proposal kolaborasi N2SP Bandung berbasis Living Visual Archive dan G-Loop Method untuk meningkatkan visibilitas dan kredibilitas brand.">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.7;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('/assets/aktivitas-n2sp-bandung.webp') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 20px;
+    }
+
+    .dark {
+      background: #111;
+      color: #fff;
+    }
+
+    .light {
+      background: #f5f5f5;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* IMAGE BLOCK */
+    .image-block img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+    }
+
+    /* CARD */
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    .dark .card {
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    /* GRID */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* FLOW */
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .flow div {
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border-radius: 20px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="index.html">Home</a>
-</nav>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Visual Bukan Sekadar Dokumentasi</h1>
+    <p>Membangun Visibilitas Brand Melalui Aktivitas Nyata</p>
+    <a href="https://wa.me/6285174223650" class="btn">Mulai Diskusi</a>
+  </div>
+</section>
 
-<div class="container bottom">
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="logo-n2sp.png" alt="Logo N2SP Komunitas Fotografi Bandung" class="profile-img">
-
-    <h1><strong>Proposal Kolaborasi</strong></h1>
-    <p>N2SP — Ngopi Ngopi Sambil Phopotoan </p>
-     <p>Bandung, Indonesia</p>
-  </section>
-  
-  <!-- TENTANG -->
-  <section class="section">
-    <h2>Tentang N2SP</h2>
-
-    <p>
-      N2SP (Ngopi Ngopi Sambil Phopotoan) merupakan ekosistem komunitas fotografi berbasis aktivitas 
-      yang berkembang di Bandung sejak 2017. Berawal dari ruang berbagi karya, N2SP tumbuh menjadi 
-      wadah dokumentasi visual yang menangkap dinamika kreatif secara nyata.
-    </p>
-
+<!-- TENTANG -->
 <section class="section">
-  <h2>Latar Belakang</h2>
-
-  <p>
-    Di era digital, banyak brand memiliki aktivitas yang berjalan secara nyata, 
-    namun belum terhubung secara optimal dengan visibilitas di mesin pencarian.
-  </p>
-
-  <p>
-    Dokumentasi sering berhenti sebagai arsip, bukan sebagai sistem yang membangun 
-    keterlihatan dan kredibilitas brand secara berkelanjutan.
-  </p>
-
-  <div class="card">
+  <div class="container">
+    <h2>Tentang N2SP</h2>
     <p>
-      Kesenjangan antara <strong>aktivitas nyata</strong> dan 
-      <strong>keterbacaan digital</strong> menjadi peluang yang dapat dioptimalkan.
+      N2SP adalah komunitas fotografi berbasis aktivitas yang berkembang di Bandung sejak 2017.
+      Lebih dari sekadar ruang berbagi karya, N2SP berfungsi sebagai arsip visual hidup yang
+      merekam dan membangun makna dari setiap aktivitas.
     </p>
   </div>
 </section>
-    
- <img src="/assets/aktivitas-n2sp-bandung.webp" alt="Aktivitas dokumentasi visual N2SP Komunitas Fotografi Bandung di lapangan" class="content-img"> 
-    
+
+<!-- IMAGE -->
+<section class="image-block">
+  <img src="/assets/aktivitas-n2sp-bandung.webp">
+</section>
+
+<!-- LATAR -->
+<section class="section light">
+  <div class="container">
+    <h2>Latar Belakang</h2>
+    <p>
+      Banyak brand memiliki aktivitas nyata, namun belum terhubung dengan visibilitas digital.
+      Dokumentasi sering berhenti sebagai arsip, bukan sebagai sistem.
+    </p>
+
     <div class="card">
-      <p>
-        <strong>N2SP bukan sekadar komunitas fotografi.</strong><br>
-        N2SP adalah sebuah <strong>arsip visual hidup</strong> yang merekam, mengolah, dan membangun makna 
-        dari aktivitas yang berlangsung secara berkelanjutan.
-      </p>
+      Kesenjangan antara aktivitas nyata dan keterbacaan digital adalah peluang strategis.
     </div>
+  </div>
+</section>
 
-    <h3>Fokus Visual</h3>
-    <p>
-      Human interest & portrait · Travel & aerial visual · Visual storytelling berbasis makna · 
-      Dokumentasi aktivitas komunitas & brand
-    </p>
-  </section>
-  
-  <img src="/assets/pendekatan-gloop-method-n2sp.webp" alt="Ilustrasi pendekatan G-Loop Method dalam sistem visibilitas digital N2SP" class="content-img"> 
- 
-  <!-- GLOOP -->
-  <section class="section">
-    <h2>Pendekatan: G-Loop Method</h2>
-    
-    <p>
-     N2SP menawarkan pendekatan berbasis sistem yang menghubungkan aktivitas nyata 
-     dengan visibilitas digital melalui siklus berkelanjutan.
-    </p>
+<!-- STATEMENT -->
+<section class="section dark center">
+  <h2>
+    Dokumentasi tanpa sistem<br>
+    hanya akan menjadi arsip.
+  </h2>
+</section>
 
-    <p>
-      Dalam membangun visibilitas digital, N2SP menggunakan pendekatan G-Loop Method — 
-      metode yang menghubungkan aktivitas nyata dengan keterbacaan digital secara sistemik.
-    </p>
+<!-- GLOOP -->
+<section class="section">
+  <div class="container center">
+    <h2>G-Loop Method</h2>
+    <p>Pendekatan yang menghubungkan aktivitas nyata dengan visibilitas digital.</p>
 
-    <div class="gloop-flow">
-      <div class="gloop-node">Experience</div>
-      <div class="gloop-node">Reflection</div>
-      <div class="gloop-node">Abstraction</div>
-      <div class="gloop-node">Documentation</div>
+    <div class="flow">
+      <div>Experience</div>
+      <div>Reflection</div>
+      <div>Abstraction</div>
+      <div>Documentation</div>
     </div>
-  </section>
+  </div>
+</section>
 
-<img src="/assets/nilai-kolaborasi-dengan-n2sp.webp" alt="Visual konsep nilai kolaborasi dokumentasi visual dan visibilitas digital N2SP" class="content-img"> 
-  
-  <!-- NILAI -->
-  <section class="section">
+<!-- NILAI -->
+<section class="section light">
+  <div class="container">
     <h2>Nilai Kolaborasi</h2>
 
     <div class="grid-2">
-      <div class="card"><p>Dokumentasi visual berbasis aktivitas nyata</p></div>
-      <div class="card"><p>Peningkatan visibilitas di mesin pencarian</p></div>
-      <div class="card"><p>Penguatan kredibilitas brand secara digital</p></div>
-      <div class="card"><p>Arsip visual jangka panjang</p></div>
-      <div class="card"><p>Positioning dalam ekosistem kreatif</p></div>
+      <div class="card">Dokumentasi berbasis aktivitas nyata</div>
+      <div class="card">Visibilitas di mesin pencarian</div>
+      <div class="card">Kredibilitas brand</div>
+      <div class="card">Arsip jangka panjang</div>
     </div>
-  </section>
-
-<section class="section">
-  <h2>Target Kolaborasi</h2>
-
-  <div class="card">
-    <p>
-      Proposal ini ditujukan untuk brand, UMKM, komunitas, dan pelaku kreatif 
-      yang ingin membangun visibilitas digital secara organik dan berkelanjutan.
-    </p>
   </div>
 </section>
 
-  
-  <!-- PAKET -->
-  <section class="section">
+<!-- PAKET -->
+<section class="section">
+  <div class="container">
     <h2>Paket Kolaborasi</h2>
 
     <div class="grid-2">
-
       <div class="card">
         <h3>ARCHIVE</h3>
-        <p><strong>Basic Documentation</strong></p>
-        <p>1 sesi · 15–25 foto · 1 artikel · 1 Instagram</p>
-        <p><strong>Fokus:</strong> jejak awal visibilitas.</p>
+        <p>1 sesi dokumentasi dasar</p>
       </div>
 
       <div class="card">
         <h3>GROWTH</h3>
-        <p><strong>Visibility Activation</strong></p>
-        <p>2 sesi · 30–50 foto · 2 artikel · multi-platform</p>
-        <p><strong>Fokus:</strong> siklus G-Loop.</p>
+        <p>Aktivasi visibilitas multi platform</p>
       </div>
 
       <div class="card">
         <h3>VISIBILITY ADVISORY</h3>
-        <p><strong>Strategic Program</strong></p>
-        <p>Program 3 bulan · dokumentasi berkelanjutan · integrasi digital</p>
-        <p><strong>Fokus:</strong> positioning sistemik.</p>
+        <p>Program strategis 3 bulan</p>
       </div>
-
     </div>
-  </section>
-
-  <!-- TAMBAHAN -->
-  <section class="section">
-    <h2>Penawaran Tambahan</h2>
-
-    <div class="grid-2">
-
-      <div class="card">
-        <h3>Co-Creation</h3>
-        <p>Kolaborasi narasi visual brand & komunitas.</p>
-      </div>
-
-      <div class="card">
-        <h3>Event Documentation</h3>
-        <p>Dokumentasi + aktivasi visual event.</p>
-      </div>
-
-      <div class="card">
-        <h3>Visual Mapping</h3>
-        <p>Optimasi visibilitas Google Maps berbasis aktivitas.</p>
-      </div>
-
-      <div class="card">
-        <h3>Brand Visual Audit</h3>
-        <p>Analisis & rekomendasi visibilitas digital.</p>
-      </div>
-
-    </div>
-  </section>
-  
-<img src="/assets/proposal3.webp" alt="Logo N2SP" class="content-img"> 
-  
-  <!-- KEUNTUNGAN -->
-  <section class="section">
-    <h2>Keuntungan Kolaborasi</h2>
-
-    <div class="card">
-      <p>
-        Visibilitas organik · Kredibilitas brand · Distribusi terintegrasi · 
-        Arsip jangka panjang · Sistem berbasis G-Loop
-      </p>
-    </div>
-  </section>
-
-<img src="/assets/alur-kolaborasi-n2sp.webp" alt="Alur kolaborasi dokumentasi visual N2SP dari diskusi hingga evaluasi" class="content-img"> 
-  
-  <!-- ALUR -->
-  <section class="section">
-    <h2>Alur Kolaborasi</h2>
-
-    <div class="gloop-flow">
-      <div class="gloop-node">Diskusi</div>
-      <div class="gloop-node">Konsep</div>
-      <div class="gloop-node">Produksi</div>
-      <div class="gloop-node">Publikasi</div>
-      <div class="gloop-node">Evaluasi</div>
-    </div>
-  </section>
-
-<h2>Validasi Visibilitas</h2>
-
-<p>
-Pendekatan dokumentasi visual berbasis aktivitas yang dilakukan bersama N2SP 
-telah menunjukkan hasil nyata dalam meningkatkan visibilitas brand di mesin pencarian.
-</p>
-
-<img src="/assets/hasil-pencarian-google-hijab-premium-bandung.webp" 
-     alt="Hasil pencarian Google untuk kata kunci hijab premium menampilkan brand hasil kolaborasi N2SP di posisi teratas"
-     class="content-img">
-
-<p>
-Contoh di atas menunjukkan bagaimana aktivitas dokumentasi yang terhubung secara konsisten 
-dapat membentuk keterlihatan brand secara organik di Google.
-</p>
-  
- <section class="section">
-  <h2>Mulai Kolaborasi</h2>
-
-  <p>
-    Kami terbuka untuk diskusi awal guna memahami kebutuhan brand Anda 
-    dan merancang pendekatan visual yang sesuai.
-  </p>
-
-  <a href="https://wa.me/6285174223650" class="btn">Mulai Diskusi</a>
+  </div>
 </section>
 
-  <section class="section">
-  <h2>Penutup</h2>
-
-  <p>
-    Melalui pendekatan Living Visual Archive, N2SP tidak hanya menghadirkan dokumentasi, 
-    tetapi membangun sistem visibilitas yang tumbuh bersama aktivitas.
-  </p>
-
-  <p>
-    Kami percaya kolaborasi ini dapat menjadi langkah strategis dalam memperkuat 
-    posisi brand di ruang digital.
-  </p>
+<!-- CTA -->
+<section class="section dark center">
+  <h2>Siap Meningkatkan Visibilitas Brand Anda?</h2>
+  <p>Klik di bawah untuk diskusi dan cek jadwal yang tersedia.</p>
+  <a href="https://wa.me/6285174223650" class="btn">Mulai Sekarang</a>
 </section>
 
- <img src="/assets/gunawan-satyakusuma-n2sp.webp" alt="Gunawan Satyakusuma dalam aktivitas dokumentasi visual bersama N2SP Bandung" class="content-img"> 
-  
-  <!-- FOOTER -->
-  <section class="section">
-    <p>Hormat kami,</p>
-    <p><strong>N2SP — Ngopi Ngopi Sambil Phopotoan</strong></p>
-    <p>Bandung, Indonesia</p>
-  </section>
-
-</div>
+<!-- FOOTER -->
+<section class="section center">
+  <p>Hormat kami,</p>
+  <p><strong>N2SP — Ngopi Ngopi Sambil Phopotoan</strong></p>
+  <p>Bandung, Indonesia</p>
+</section>
 
 </body>
 </html>
