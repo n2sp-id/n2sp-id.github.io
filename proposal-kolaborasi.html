@@ -201,20 +201,30 @@ li{margin-bottom:6px;}
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-.logo-slider{
-  overflow-x:auto;
-  padding:20px 0;
+.logo-carousel{
+  position:relative;
+  display:flex;
+  align-items:center;
 }
 
+/* area scroll */
+.logo-slider{
+  overflow:hidden;
+  width:100%;
+}
+
+/* track */
 .logo-track{
   display:flex;
-  gap:30px;
+  gap:40px;
+  transition:transform 0.4s ease;
 }
 
+/* logo lebih besar */
 .logo-track img{
-  height:60px;
+  height:80px;
   flex-shrink:0;
-  opacity:0.7;
+  opacity:0.8;
   transition:0.3s;
 }
 
@@ -223,13 +233,46 @@ li{margin-bottom:6px;}
   transform:scale(1.1);
 }
 
-.logo-slider::-webkit-scrollbar{
-  display:none;
+/* tombol */
+.nav{
+  background:#111;
+  color:#fff;
+  border:none;
+  font-size:20px;
+  padding:10px 14px;
+  cursor:pointer;
+  border-radius:50%;
+  position:absolute;
+  z-index:2;
+}
+
+.prev{ left:-10px; }
+.next{ right:-10px; }
+
+.nav:hover{
+  background:#333;
 }
   
 </style>
 </head>
+  
+<script>
+const slider = document.getElementById('logoSlider');
+const track = slider.querySelector('.logo-track');
 
+let scrollAmount = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+  scrollAmount += 200;
+  track.style.transform = `translateX(-${scrollAmount}px)`;
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  scrollAmount -= 200;
+  if(scrollAmount < 0) scrollAmount = 0;
+  track.style.transform = `translateX(-${scrollAmount}px)`;
+});
+</script>
 <body>
 
 <nav>
@@ -319,7 +362,11 @@ li{margin-bottom:6px;}
     Beberapa brand dan UMKM yang telah bekerja sama dalam aktivitas dokumentasi dan visibilitas bersama N2SP.
   </p>
 
-  <div class="logo-slider">
+  <div class="logo-carousel">
+
+  <button class="nav prev">&#10094;</button>
+
+  <div class="logo-slider" id="logoSlider">
     <div class="logo-track">
 
       <img src="assets/logo-brand1.png" alt="Brand Kolaborasi 1">
@@ -348,7 +395,9 @@ li{margin-bottom:6px;}
       <img src="assets/logo-brand24.png" alt="Brand Kolaborasi 24">
     </div>
   </div>
-
+ <button class="nav next">&#10095;</button> 
+</div>
+  
 </section>
 
   
